@@ -28,8 +28,15 @@ function esPrimo(num) {
   return true;
 }
 
-var butt = document.getElementById("button");
-butt.onclick()
+function onButtonClick() {
+  var input = document.getElementById("input");
+  let num = input.value;
+  let isPrime = esPrimo(num);
+  window.alert(isPrime);
+}
+
+var butt = document.getElementById("butt");
+butt.onclick = onButtonClick;
 
 /*testeo
 
